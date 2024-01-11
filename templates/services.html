@@ -1,3 +1,16 @@
-<h4>{{ service['title'] }}</h4>
-<h6>{{ service['price'] }}</h6>
-<p>{{ service['description'] }}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="service-details">
+        <h4>{{ service['title'] }}</h4>
+        <h6>{{ service['price'] }}</h6>
+        <p>{{ service['description'] }}</p>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center mt-3 mt-md-0">
+      <a href="mailto:rijam23@gmail.com?subject={{ service['title'] }}&body=Name: %0D%0A%0D%0AI wanna avail your service for {{ service['title'] }}">
+        <button class="btn btn-success btn-lg">Buy</button>
+      </a>
+    </div>
+  </div>
+</div>
